@@ -1,0 +1,149 @@
+.header
+	width: 100%
+	background: $header-bg
+
+.header__container
+	width: 1170px
+	margin: 0 auto
+	padding: 45px 0
+	font-size: 0
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 450px
+		margin: 0 auto
+		display: flex
+		flex-flow: column
+		justify-content: center
+		align-items: center
+		padding: 20px 0
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		width: 90%
+		margin: 0 auto
+	@media screen and (min-width: 1198px)
+		width: 1170px
+
+.header__languages,
+.header__title,
+.header__search
+	display: inline-block
+	width: 33.33%
+	font-size: 14px
+	vertical-align: middle
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 100%
+		text-align: center
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		font-size: 12px
+	
+.header__languages
+	padding: 0
+
+.language
+	display: inline-block
+	margin-right: 15px
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		margin-top: 12px
+	&:last-child
+		margin-right: 0
+	.language--link
+		text-decoration: none
+		color: $black	
+	.active-link
+		color: $white
+		padding: 0 0 4px 0
+		border-bottom: 1px solid $white
+		transition: all .2s linear
+
+.header__title
+	text-align: center
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		margin: 15px 0
+	
+.header__title--heading
+	font-size: 36px
+	font-weight: 400
+	margin: 5px 0
+	padding: 0
+	text-align: center
+	text-decoration: none
+	color: $black
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		font-size: 22px
+		margin-bottom: 20px
+	@media screen and ( min-width: 768px ) and ( max-width: 1197px)
+		font-size: 24px
+	@media screen and ( min-width: 1198px )
+		font-size: 32px
+
+.header__search
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 75%
+		margin: 0 auto 15px
+
+
+.header__search > button 
+	background: none
+	border: 0
+	outline: 0
+.header__search > input
+	width: calc( 100% - 33px )
+	background: transparent
+	box-shadow: none
+	border: 0
+	border-bottom: 1px solid $white
+	color: $black
+	&::-webkit-input-placeholder 
+		color: $white
+	&::-moz-placeholder          
+		color: $white
+	&:-moz-placeholder           
+		color: $white
+	&:-ms-input-placeholder
+		color: $white
+	&:focus
+		outline: 0
+.header__search .fa-search
+	color: $white
+
+.navbar__container
+	width: 100%
+.navbar
+	width: 1170px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	flex-flow: row
+	align-items: center
+	border-top: 1px solid $white
+	padding: 0
+	list-style: none
+	text-transform: uppercase
+	li
+		padding: 14px 0
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 350px
+		margin: 0 auto
+		flex-flow: column wrap
+		border-top: none
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		width: 90%
+		margin: 0 auto
+	@media screen and (min-width: 1198px)
+		width: 1170px
+.navbar--link
+	text-decoration: none
+	color: $black
+	position: relative
+.navbar-active
+	color: $white
+	transition: all .3s linear
+	&::before
+		content: ""
+		position: absolute
+		top: -20px
+		left: 50%
+		width: 10px
+		height: 10px
+		background: $white
+		transform: translateX(-50%) rotate(45deg) 
+
