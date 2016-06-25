@@ -1,0 +1,5 @@
+node_modules/*
+main.css.map
+.sass-cache/*
+sass/pages/ek_{03..8}.sass
+html/ek_{03..6}.html
