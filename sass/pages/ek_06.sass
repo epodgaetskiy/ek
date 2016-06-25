@@ -4,11 +4,44 @@
 	color: $black
 	margin: 0 auto
 	padding: 15px
+	overflow: hidden
+	font-size: 12px
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 100%
+		padding: 0
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		width: 90%
+		margin: 0 auto
+	@media screen and (min-width: 1198px)
+		width: 1170px
 
 .biography--image
 	float: left
 	margin-right: 10px
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		float: none
+		max-width: 100%
+		margin: 20px auto
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		float: none
+		max-width: 100%
+.biography--image-container
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)		
+		margin: 20px auto
+		text-align: center
 
 .biography--description
 	margin: 0
 	padding: 0
+
+.top__descr,
+.middle__descr,
+.end__descr
+	margin-bottom: 20px
+	padding: 0 10px
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		clear: both
+
+.biography--description-self
+	margin-bottom: 20px
+	padding: 0 10px

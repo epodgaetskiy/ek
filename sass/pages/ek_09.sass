@@ -1,0 +1,189 @@
+.searchResult
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 100%
+		margin: 0 auto
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		width: 90%
+		margin: 0 auto
+	@media screen and (min-width: 1198px)
+		width: 1170px
+		margin: 0 auto
+
+.searchResult__search
+	width: 95%
+	margin: 0 auto
+	button
+		background: transparent
+		border: 0
+		&:focus
+			outline: none
+.searchResult--input
+	width: 95%
+	border: none
+	border-bottom: 1px solid $black
+	outline: none
+	padding: 5px 10px
+	box-sizing: border-box
+	&::-webkit-input-placeholder 
+		color: $black
+	&::-moz-placeholder          
+		color: $black
+	&:-moz-placeholder           
+		color: $black
+	&:-ms-input-placeholder
+		color: $black
+	&:focus
+		outline: none
+
+.searchResult__nav
+	padding: 15px 10px 35px 10px
+	margin: 0
+	background: #b2b2b2
+	list-style: none
+	width: 20%
+	float: left
+	box-sizing: border-box
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 100%
+		margin: 0 auto
+
+.searchResult__nav--item
+	border-bottom: 1px solid $black
+	padding: 5px 0
+	font-size: 14px
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.searchResult__nav--link
+	color: $black
+	text-decoration: none
+
+.searchResult__content
+	float: right
+	background: $white
+	width: 80%
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 100%
+		margin: 0 auto
+
+.searchResult__row--result
+	width: 85%
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-items: center
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 100%
+		margin: 0 auto
+		flex-flow: column
+		justify-content: center
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		width: 90%
+		margin: 0 auto
+.searchResult__artResult,
+.searchResult__videoResult,
+.searchResult__biographyResult
+	width: 95%
+	margin: 0 auto
+.artResult--heading,
+.videoResult--heading,
+.biographyResult--heading
+	padding: 10px 0
+	width: 100%
+	background: #ebebeb
+	box-sizing: border-box
+	border: 1px solid $black
+	font-weight: 400
+	font-size: 14px
+	text-align: center
+	margin-bottom: 20px
+.artResult__resultList
+	list-style: none
+	display: flex
+	justify-content: space-between
+	flex-flow: row
+	padding: 0
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 90%
+		flex-flow: column
+		align-items: center
+		font-size: 15px
+		margin: 0 auto
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		flex-flow: row wrap
+
+
+.artResult__resultList--item
+	width: 23%
+	display: flex
+	flex-flow: column
+	padding: 15px
+	border: 1px solid $black
+	box-sizing: border-box
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 90%
+		flex-flow: column
+		align-items: center
+		font-size: 15px
+		margin: 10px auto
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		flex-flow: row wrap
+		width: 45%
+		margin-bottom: 10px
+
+.artResult__resultList--item-heading
+	font-size: 14px
+	font-weight: 600
+	margin-bottom: 15px
+	width: 100%
+.artResult__resultList--item-text
+	font-size: 14px
+	font-weight: 400
+	margin: 0 0 10px 0
+	width: 100%
+.artResult__resultList--item-image
+	max-width: 100%
+.artResult__more,
+.biographyResult__more
+	width: 100%
+	padding: 5px 10px
+	border: 1px solid $black
+	margin-bottom: 20px
+	box-sizing: border-box
+	display: flex
+	flex-flow: column
+	justify-content: flex-start
+.artResult__more--heading
+	margin: 0
+	font-size: 14px
+.artResult__more--text
+	font-size: 14px
+	font-weight: 400
+	margin: 5px 0 5px 0
+.videoResult__more
+	display: flex
+	flex-flow: row
+	justify-content: space-between
+.videoResult__more-video
+	flex: 0 1 28%
+
+.videoResult__more-text
+	flex: 0 1 70%
+
+.videoResult__more-text-heading,
+.biographyResult__more-text-heading
+	font-size: 14px
+	margin: 0 0 10px 0
+
+.videoResult__more-text-para,
+.biographyResult__more-text-para
+	text-align: justify
+	margin: 10px 0 0 0
+	font-size: 14px
+
+.pagination-seachResult
+	width: 95%
+	display: block
+	height: 40px
+	margin: 0 auto	

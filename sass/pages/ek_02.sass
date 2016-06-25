@@ -3,7 +3,7 @@
 	margin: 0 auto
 	padding: 10px 0
 	display: flex
-	flex-flow: row
+	flex-flow: row wrap
 	justify-content: flex-start
 	align-items: center
 	list-style: none
@@ -19,8 +19,10 @@
 			font-size: 14px
 			font-weight: 400
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
-		width: 450px
+		width: 90%
+		justify-content: center
 		margin: 0 auto
+		font-size: 15px
 	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
 		width: 90%
 		margin: 0 auto
@@ -54,7 +56,7 @@
 	overflow: hidden
 	background: $white
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
-		width: 450px
+		width: 100%
 		margin: 0 auto
 	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
 		width: 90%
@@ -62,11 +64,35 @@
 	@media screen and (min-width: 1198px)
 		width: 1170px
 
-.main__content--nav
+.main__content--nav	
 	width: 20%
 	float: left
+	position: relative
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
-		width: 40%	
+		display: none
+		position: fixed
+		width: 100%
+		height: 100vh
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 2
+		overflow-y: auto
+
+.fa.mobile-menu
+	display: none
+	@media screen and ( min-width: 320px ) and ( max-width: 768px )
+		display: block
+		position: absolute
+		top: 10px
+		left: 30px
+.fa.mobile-close
+	position: absolute
+	right: 20px
+	top: 30px
+	@media screen and ( min-width: 769px )
+		display: none 
 
 .main__content--nav__themes,
 .main__content--nav__microsite
@@ -129,14 +155,16 @@
 /* main content--art styles */
 .main__content--art
 	float: right
+	position: relative
 	width: calc(80% - 20px)
 	padding-left: 20px
 	font-size: 14px
 	color: $black
 	padding-top: 20px
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
-		width: 58%
-		padding-left: 2%
+		width: 95%
+		margin: 0 auto
+		padding-top: 50px
 
 .content__search
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
@@ -216,7 +244,7 @@
 
 .main__content--topic
 	width: 24%
-	height: 200px
+	height: 220px
 	margin: 0 1% 10px 0
 	padding: 10px
 	display: flex
@@ -225,12 +253,12 @@
 	border: 1px solid $black
 	box-sizing: border-box
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
-		width: 49%	
+		width: 100%	
 
 .main__content--topic-icon
-	max-width: 250px
 	height: auto
-
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 100%
 .main__content--topic-heading
 	text-align: center
 	font-size: 14px
@@ -243,7 +271,7 @@
 		width: 100%
 
 .subscribe
-	width: 1170px
+	display: none
 	margin: 50px auto 20px
 	border: 1px solid $black
 	position: relative
@@ -255,13 +283,20 @@
 		left: 50%
 		background: $black
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
-		width: 450px
+		width: 90%
 		margin: 20px auto
 	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
 		width: 90%
 		margin: 20px auto
 	@media screen and (min-width: 1198px)
 		width: 1170px
+
+.subscribe-close
+	position: absolute
+	top: 12px
+	right: 25px
+	cursor: pointer
+
 .subscribe-form
 	padding: 12px 0
 	display: flex
@@ -271,7 +306,7 @@
 	font-size: 14px
 	font-weight: 400
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
-		width: 350px
+		width: 90%
 		margin: 20px auto
 		font-size: 12px
 		flex-flow: column

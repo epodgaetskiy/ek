@@ -1,0 +1,66 @@
+.feedback
+	background: $white
+	padding: 40px 0
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		width: 90%
+		justify-content: center
+		margin: 0 auto
+	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
+		width: 90%
+		margin: 0 auto
+	@media screen and (min-width: 1198px)
+		width: 1170px
+		margin: 0 auto
+.feedback__heading
+	position: relative
+	font-size: 14px
+	font-weight: 400
+	text-align: center
+	margin-top: 35px
+	&:before
+		position: absolute
+		content: ""
+		width: 8px
+		height: 8px
+		background: $black
+		top: -20px
+		left: 50%
+		transform: translateX(-50%) rotate(45deg)
+
+
+.feedback__form
+	width: 90%
+	margin: 0 auto
+	border: 1px solid $black
+	display: flex
+	flex-flow: column
+	align-items: center
+	justify-content: flex-start
+
+.feedback__form--subject,
+.feedback__form--email,
+.feedback__form--message
+	margin-top: 25px
+	width: 60%
+	padding: 5px 10px
+	&::-webkit-input-placeholder 
+		color: $black
+	&::-moz-placeholder          
+		color: $black
+	&:-moz-placeholder           
+		color: $black
+	&:-ms-input-placeholder
+		color: $black
+.feedback__form--submit
+	margin-top: 20px
+	margin-bottom: 20px
+	width: 30%
+	background: $black
+	border: 0
+	color: $white
+	padding: 10px 0
+	&:focus
+		outline: none
+
+.feedback__form--message
+	height: 150px

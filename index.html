@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<title>Елена Кожевникова</title>
@@ -394,9 +396,17 @@
 			</section>
 			<div class="main__getUpdates--container">
 				<section class="main__getUpdates">
-					<input type="checkbox">
-					<h3 class="main__getUpdates--description">Get E-mail updates</h3>
+					<label for="get_subscription"><input name="get_subscription" class="get_subscription" type="checkbox">Get E-mail updates</label>
 				</section>
+			</div>
+			<div class="subscribe">
+				<i class="fa fa-times fa-2x subscribe-close" aria-hidden="true"></i>
+				<form method="post" class="subscribe-form" name="subscribe">
+					<label><input type="checkbox" checked>Подписка на новости</label>
+					<input class="subscribe-form-name" type="text" required placeholder="Ваше имя:">
+					<input class="subscribe-form-email" type="email" required placeholder="E-mail:">
+					<input class="subscribe-form-submit" type="submit" value="Подписаться">
+				</form>
 			</div>
 		</div>
 	</main>
