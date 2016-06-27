@@ -1194,6 +1194,48 @@ label {
   border-bottom: 1px solid #000;
   box-sizing: border-box; }
 
+.advanced__search {
+  display: none; }
+
+.advanced__search--crNumber,
+.advanced__search--input {
+  padding: 2px 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box; }
+
+.advanced__search--heading {
+  font-size: 12px; }
+
+.advanced__search--year,
+.advanced__search--size {
+  font-size: 12px;
+  font-weight: bold; }
+  .advanced__search--year span,
+  .advanced__search--size span {
+    font-weight: normal; }
+
+.advanced__search--year-select {
+  padding: 2px 8px;
+  font-size: 12px;
+  width: 49.2%;
+  box-sizing: border-box; }
+
+.advanced__search--size-select {
+  width: 44.5%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 5px; }
+
+.search--size-head {
+  margin-right: 6px; }
+
+.advanced__search--color {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 20px; }
+
 .main__content--topic-header {
   text-align: center;
   padding: 0;

@@ -22,12 +22,12 @@ $(document).ready(function(){
 	});
 
 	$('.menu__icon-mobile').click(function(){
-		$('.navbar').toggle(300);
+		$('.navbar').toggle(100);
 		$('.navbar').css('display', 'flex');
 	})
 
 	$('.catalog__icon-mobile').click(function(){
-		$('.main__content--nav').toggle(300);
+		$('.main__content--nav').toggle(100);
 		$('.main__content--nav').css('display', "block")
 	})
 
@@ -41,8 +41,13 @@ $(document).ready(function(){
         $('html, body').animate({
         	scrollTop: $('.content__block').eq(elementIndex).offset().top
 		}, 1000);
-		console.log($('.content__block').eq(elementIndex).offset().top)
     });
+
+    $('.advanced__search--toggle').click(function(e){
+    	e.preventDefault();
+    	$('.advanced__search').toggle(200);
+    	$('.advanced__search').css('display', 'block')
+    })
 })
 
 

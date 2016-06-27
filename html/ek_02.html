@@ -128,8 +128,37 @@
 								<option value="Select">Select</option>
 							</select>
 							<input type="text" placeholder="Title" class="content__search--form-keyWord">
+							<div class="advanced__search">
+								<input type="text" class="advanced__search--crNumber" placeholder="CR number">
+								<label for="" class="advanced__search--heading">Advanced search</label>
+									<input type="text" class="advanced__search--input" placeholder="Location">
+								<label for="" class="advanced__search--year">By year</label>
+								<select class="advanced__search--year-select">
+									<option value="From">From</option>
+								</select>
+								<select class="advanced__search--year-select">
+									<option value="To">To</option>
+								</select>
+								<label for="" class="advanced__search--size">By size<span>&nbsp;(cm)</span></label>
+								<span class="search--size-head">H</span><select class="advanced__search--size-select">
+									<option value="From">From</option>
+								</select>&nbsp;<span>-</span>
+								<select class="advanced__search--size-select">
+									<option value="To">To</option>
+								</select>
+								<span>W</span> <select class="advanced__search--size-select">
+									<option value="From">From</option>
+								</select>&nbsp;<span>-</span>
+								<select class="advanced__search--size-select">
+									<option value="To">To</option>
+								</select>
+								<select class="advanced__search--color">
+									<option value="Color">Color</option>
+									<option value="Black">Black</option>
+								</select>
+							</div>
 							<input type="submit" value="Search" class="content__search--form-submit">
-							<label>
+							<label class="advanced__search--toggle">
 								<input type="checkbox" class="content__search--form-moreOption">More options
 							</label>
 						</form>
