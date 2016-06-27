@@ -19,15 +19,30 @@ $(document).ready(function(){
 	$('.subscribe-close').on('click', function(){
 		$('.subscribe').hide("slow");
 		$('.main__getUpdates--container').show();
+	});
+
+	$('.menu__icon-mobile').click(function(){
+		$('.navbar').toggle(300);
+		$('.navbar').css('display', 'flex');
 	})
 
-	$('.mobile-menu').click(function(){
-		$('.main__content--nav').show("slow")
+	$('.catalog__icon-mobile').click(function(){
+		$('.main__content--nav').toggle(300);
+		$('.main__content--nav').css('display', "block")
 	})
 
-	$('.mobile-close').click(function(){
-		$('.main__content--nav').hide("slow")
+	$('.language__icon-mobile').click(function(){
+		$('.header__languages').toggle(200);
+		$('.header__languages').css('display', 'block');
 	})
+
+	$('.chronology__nav--link').on('click', function(){
+		var elementIndex = $('.chronology__nav--link').index(this);
+        $('html, body').animate({
+        	scrollTop: $('.content__block').eq(elementIndex).offset().top
+		}, 1000);
+		console.log($('.content__block').eq(elementIndex).offset().top)
+    });
 })
 
 
