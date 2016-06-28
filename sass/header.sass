@@ -14,7 +14,7 @@
 		flex-flow: column
 		justify-content: center
 		align-items: center
-		padding: 20px 0
+		padding: 20px 0 0 0
 	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
 		width: 90%
 		margin: 0 auto
@@ -76,11 +76,19 @@
 		font-size: 24px
 	@media screen and ( min-width: 1198px )
 		font-size: 32px
+	&:hover,
+	&:focus,
+	&:link
+		color: $black
+		text-decoration: none
 
 .header__search
+	text-align: right
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
-		width: 70%
-		margin: 0 auto 15px
+		display: none
+		margin: 10px auto
+		width: 60%
+		box-sizing: border-box
 
 
 .header__search > button 
@@ -109,7 +117,7 @@
 
 .navbar__container
 	width: 100%
-.navbar
+.navbar--desktop
 	width: 1170px
 	margin: 0 auto
 	display: flex
@@ -122,12 +130,17 @@
 	text-transform: uppercase
 	li
 		padding: 14px 0
+		@media screen and ( min-width: 320px ) and ( max-width: 767px )
+			padding: 6px 0
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
 		display: none
-		width: 100%
+		width: 90%
 		margin: 0 auto
 		flex-flow: column wrap
+		justify-content: flex-start
+		align-items: flex-start
 		border-top: none
+		padding-bottom: 10px
 	@media screen and ( min-width: 768px ) and ( max-width: 1198px)
 		width: 90%
 		margin: 0 auto
@@ -137,6 +150,11 @@
 	text-decoration: none
 	color: $black
 	position: relative
+	&:hover,
+	&:focus,
+	&:link
+		color: inherit
+		text-decoration: none
 .navbar-active
 	color: $white
 	transition: all .3s linear
@@ -149,4 +167,8 @@
 		height: 10px
 		background: $white
 		transform: translateX(-50%) rotate(45deg) 
+	@media screen and ( min-width: 320px ) and ( max-width: 767px )
+		&::before
+			width: 0
+			height: 0
 

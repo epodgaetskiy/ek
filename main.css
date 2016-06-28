@@ -390,7 +390,7 @@ th {
       flex-flow: column;
       justify-content: center;
       align-items: center;
-      padding: 20px 0; } }
+      padding: 20px 0 0 0; } }
   @media screen and (min-width: 768px) and (max-width: 1198px) {
     .header__container {
       width: 90%;
@@ -465,11 +465,18 @@ th {
   @media screen and (min-width: 1198px) {
     .header__title--heading {
       font-size: 32px; } }
+  .header__title--heading:hover, .header__title--heading:focus, .header__title--heading:link {
+    color: #000;
+    text-decoration: none; }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .header__search {
-    width: 70%;
-    margin: 0 auto 15px; } }
+.header__search {
+  text-align: right; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .header__search {
+      display: none;
+      margin: 10px auto;
+      width: 60%;
+      box-sizing: border-box; } }
 
 .header__search > button {
   background: none;
@@ -499,7 +506,7 @@ th {
 .navbar__container {
   width: 100%; }
 
-.navbar {
+.navbar--desktop {
   width: 1170px;
   margin: 0 auto;
   display: flex;
@@ -510,27 +517,36 @@ th {
   padding: 0;
   list-style: none;
   text-transform: uppercase; }
-  .navbar li {
+  .navbar--desktop li {
     padding: 14px 0; }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .navbar--desktop li {
+        padding: 6px 0; } }
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    .navbar {
+    .navbar--desktop {
       display: none;
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
       flex-flow: column wrap;
-      border-top: none; } }
+      justify-content: flex-start;
+      align-items: flex-start;
+      border-top: none;
+      padding-bottom: 10px; } }
   @media screen and (min-width: 768px) and (max-width: 1198px) {
-    .navbar {
+    .navbar--desktop {
       width: 90%;
       margin: 0 auto; } }
   @media screen and (min-width: 1198px) {
-    .navbar {
+    .navbar--desktop {
       width: 1170px; } }
 
 .navbar--link {
   text-decoration: none;
   color: #000;
   position: relative; }
+  .navbar--link:hover, .navbar--link:focus, .navbar--link:link {
+    color: inherit;
+    text-decoration: none; }
 
 .navbar-active {
   color: #fff;
@@ -544,6 +560,10 @@ th {
     height: 10px;
     background: #fff;
     transform: translateX(-50%) rotate(45deg); }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .navbar-active::before {
+      width: 0;
+      height: 0; } }
 
 footer {
   width: 100%;
@@ -804,7 +824,8 @@ footer {
       width: 90%;
       justify-content: center;
       margin: 0 auto;
-      font-size: 15px; } }
+      font-size: 15px;
+      display: none; } }
   @media screen and (min-width: 768px) and (max-width: 1198px) {
     .breadcrumbs {
       width: 90%;
