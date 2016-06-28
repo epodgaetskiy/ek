@@ -610,7 +610,12 @@ th {
 .catalog__icon-mobile,
 .language__icon-mobile {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: 35%; }
+  .menu__icon-mobile .fa.fa-2x,
+  .catalog__icon-mobile .fa.fa-2x,
+  .language__icon-mobile .fa.fa-2x {
+    width: 34px; }
   .menu__icon-mobile i,
   .catalog__icon-mobile i,
   .language__icon-mobile i {
@@ -618,7 +623,10 @@ th {
 
 .language__icon-mobile {
   padding-bottom: 5px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 25%; }
+  .language__icon-mobile .fa.fa-2x {
+    width: 25.15px; }
   .language__icon-mobile span {
     border-bottom: 1px solid #000; }
 
