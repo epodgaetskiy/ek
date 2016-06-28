@@ -1354,6 +1354,11 @@ label {
   font-weight: 600;
   margin: 0; }
 
+#carousel-example-generic .carousel-control {
+  opacity: 0.4; }
+  #carousel-example-generic .carousel-control:hover {
+    opacity: 0.4; }
+
 .content__search--warning {
   width: 97.5%;
   margin: 0 auto;
