@@ -72,6 +72,13 @@
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
 		display: none
 		width: 100%
+		position: fixed
+		top: 60px
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 20
+		overflow-y: auto
 
 .fa.mobile-menu
 	display: none
@@ -93,6 +100,9 @@
 	margin: 0
 	box-sizing: border-box
 	list-style: none
+	@media screen and ( min-width: 320px ) and ( max-width: 768px )
+		padding: 0
+
 
 .main__content--nav__themes
 	background: #b2b2b2
@@ -343,67 +353,3 @@ label
 	@media screen and ( min-width: 320px ) and ( max-width: 767px )
 		margin: 20px 0 0 0
 		width: 77%
-.mobile_navbar
-	display: none
-	flex-flow: row
-	justify-content: space-around
-	align-items: center
-	background: #dedede
-	padding: 10px 0
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	height: 40px
-	z-index: 100
-
-	@media screen and ( min-width: 320px ) and ( max-width: 767px )
-		display: flex
-
-.menu__icon-mobile,
-.catalog__icon-mobile
-	display: flex
-	align-items: center
-	i
-		margin-right: 10px
-
-.language__icon-mobile
-	padding-bottom: 5px
-	border-bottom: 1px solid $black
-	box-sizing: border-box
-
-.advanced__search
-	display: none
-
-.advanced__search--crNumber,
-.advanced__search--input
-	padding: 2px 8px
-	margin-bottom: 10px
-	width: 100%
-	box-sizing: border-box
-.advanced__search--heading
-	font-size: 12px
-
-.advanced__search--year,
-.advanced__search--size
-	font-size: 12px
-	font-weight: bold
-	span
-		font-weight: normal
-.advanced__search--year-select
-	padding: 2px 8px
-	font-size: 12px
-	width: 49.2%
-	box-sizing: border-box
-.advanced__search--size-select
-	width: 44.5%
-	box-sizing: border-box
-	margin-bottom: 20px
-	border-radius: 5px
-.search--size-head
-	margin-right: 6px
-.advanced__search--color
-	width: 100%
-	box-sizing: border-box
-	border-radius: 5px
-	margin-bottom: 20px
