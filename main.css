@@ -603,6 +603,9 @@ th {
     .header__title--heading {
         font-size: 32px;
     }
+    .header__search {
+      text-align: right;
+    }
 }
 .header__title--heading:hover,
 .header__title--heading:focus,
@@ -612,9 +615,6 @@ th {
     color: #000;
 }
 
-.header__search {
-    text-align: right;
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .header__search {
         box-sizing: border-box; 
@@ -808,9 +808,7 @@ th {
     display: -ms-flexbox;
     display: flex;
 
-    width: 35%; 
-
-    -ms-flex-align: center; 
+    -ms-flex-align: center;
 
         align-items: center;
 }
@@ -827,7 +825,7 @@ th {
 
 .language__icon-mobile {
     box-sizing: border-box;
-    width: 25%; 
+    width: 20%; 
     padding-bottom: 5px;
 }
 .language__icon-mobile .fa.fa-2x {
