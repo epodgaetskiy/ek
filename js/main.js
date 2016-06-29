@@ -79,7 +79,10 @@ $(document).ready(function(){
 		$('.header__search').css('display', 'flex');
 	})
 
-	
+	$('.content__search--form-moreOption').on('click', function(){
+		$('.advanced__search').toggle(1);
+		$('.advanced__search').css('display', 'block');
+	})
 	
 	$('.chronology__nav--link').on('click', function(){
 		var elementIndex = $('.chronology__nav--link').index(this);
