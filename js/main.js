@@ -51,9 +51,11 @@ $(document).ready(function(){
 		$('.catalog__icon-mobile > i').toggleClass('fa-picture-o');
 		$('.catalog__icon-mobile > i').toggleClass('fa-close');
 		if( $('.menu__icon-mobile > i').hasClass('fa-close') || $('.catalog__icon-mobile > i').hasClass('fa-close') || $('.language__icon-mobile > i').hasClass('fa-close') ) {
-			$('body').bind('touchmove', function(e){ e.preventDefault() });
+			$('.main__content--art').bind('touchmove', function(e){ e.preventDefault() });
+			$('body').css('overflow', 'hidden');
 		} else {
-			$('body').unbind('touchmove');
+			$('.main__content--art').unbind('touchmove');
+			$('body').css('overflow', 'auto')
 		}
 	})
 

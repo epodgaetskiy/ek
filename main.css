@@ -619,7 +619,7 @@ th {
     .header__search {
         box-sizing: border-box; 
         width: 60%;
-        margin: 10px auto;
+        margin: 0 auto 10px auto;
     }
 }
 
