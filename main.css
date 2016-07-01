@@ -825,7 +825,6 @@ th {
 
 .language__icon-mobile {
     box-sizing: border-box;
-    width: 20%; 
     padding-bottom: 5px;
 }
 .language__icon-mobile .fa.fa-2x {
@@ -1256,6 +1255,11 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
+    .main__getUpdates label {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
 }
 @media screen and (min-width: 768px) and (max-width: 1198px) {
     .main__getUpdates {
@@ -1519,7 +1523,6 @@ footer {
     color: #fff;
     background: #9d9d9d;
 }
-
 .microsite--theme {
     padding: 12px 7px; 
 
@@ -1583,6 +1586,7 @@ footer {
 }
 
 .content__search--image {
+    width: 100%;
     max-width: 95%;
     margin: 0 auto;
 }
@@ -1833,8 +1837,6 @@ label {
     label {
         width: 70%;
         margin: 0; 
-
-        text-align: center;
     }
 }
 
@@ -2060,7 +2062,7 @@ label {
     overflow: hidden;
 
     box-sizing: border-box; 
-    width: 1170px;
+    
     margin: 0 auto;
     padding: 15px;
 
@@ -2079,9 +2081,10 @@ label {
         margin: 0 auto;
     }
 }
-@media screen and (min-width: 1198px) {
+@media screen and (min-width: 1199px) {
     .biography {
         width: 1170px;
+        margin: 0 auto;
     }
 }
 
